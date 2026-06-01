@@ -1,0 +1,239 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#0d0d0d;
+    color:white;
+    font-family:'Poppins', sans-serif;
+}
+
+header{
+    background:black;
+    padding:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+header h1{
+    color:#8a2be2;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:10px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#8a2be2;
+}
+
+.banner{
+    height:500px;
+    overflow:hidden;
+}
+
+.banner img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+}
+
+.prev,
+.next{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    background:rgba(0,0,0,0.5);
+    color:white;
+    border:none;
+    padding:15px;
+    cursor:pointer;
+    font-size:25px;
+}
+
+.prev{
+    left:20px;
+}
+
+.next{
+    right:20px;
+}
+
+.noticias{
+    padding:50px;
+    text-align:center;
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+
+.card{
+    background:#1c1c1c;
+    padding:25px;
+    width:300px;
+    border-radius:10px;
+}
+
+.bio{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:50px;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.bio img{
+    width:350px;
+    border-radius:15px;
+}
+
+.bio-texto{
+    max-width:500px;
+}
+
+.discografia{
+    padding:50px;
+    text-align:center;
+}
+
+.albuns{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+
+.album{
+    background:#1c1c1c;
+    padding:20px;
+    border-radius:15px;
+    width:300px;
+}
+
+.album img{
+    width:100%;
+    border-radius:10px;
+}
+
+.album a{
+    display:inline-block;
+    margin-top:15px;
+    padding:10px 20px;
+    background:#8a2be2;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+.galeria{
+    padding:50px;
+    text-align:center;
+}
+
+.fotos{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+
+.foto{
+    width:250px;
+    height:250px;
+    object-fit:cover;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.modal{
+    display:none;
+    position:fixed;
+    z-index:999;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.9);
+}
+
+.modal-img{
+    display:block;
+    margin:5% auto;
+    width:60%;
+}
+
+#fechar{
+    position:absolute;
+    top:20px;
+    right:40px;
+    color:white;
+    font-size:40px;
+    cursor:pointer;
+}
+
+.contato{
+    padding:50px;
+    text-align:center;
+}
+
+form{
+    max-width:500px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+input,
+textarea{
+    padding:15px;
+    border:none;
+    border-radius:5px;
+}
+
+button{
+    padding:15px;
+    border:none;
+    background:#8a2be2;
+    color:white;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    margin-top:50px;
+    background:black;
+}
+
+@media(max-width:768px){
+
+    .bio{
+        flex-direction:column;
+    }
+
+    .banner{
+        height:300px;
+    }
+
+    .banner img{
+        height:300px;
+    }
+
+}
